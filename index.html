@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SI-OES</title>
   <link rel="stylesheet" href="D:\SI-OES\Resources\CSS\bootstrap.min.css">
-  <link ref="stylesheet" href="D:\SI-OES\Resources\CSS\bootstrap-icons.css">
-  <script src="D:\SI-OES\Resources\CSS\JavaScript\bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="D:\SI-OES\Resources\CSS\bootstrap-icons.css">
+  <link rel="stylesheet" href="D:\SI-OES\Resources\CSS\styles.css"> <!-- Enlace al archivo CSS -->
+  <script src="D:\SI-OES\Resources\JavaScript\bootstrap.bundle.min.js"></script>
   <style>
     .centered-content {
       min-height: 100vh;
@@ -21,12 +22,25 @@
     /* Placeholder color for all input elements */
     input::placeholder {
       color: gray;
-      opacity: 1; /* Ensures color applies in all browsers */
+      opacity: 1;
+    }
+
+    /* Custom footer styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 
 <body class="h-100 text-bg-dark">
+
+  <!-- Header -->
   <header class="mb-auto" data-bs-theme="dark">
     <div>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -45,11 +59,14 @@
                 <a class="nav-link" href="#">Acerca de</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
@@ -58,13 +75,67 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="px-3 centered-content">
-    <h1>Algo</h1>
-    <p class="lead">Esto es un texto de prueba para verificar que el texto se visualize correctamente</p>
+    <h1>Bienvenido a SI-OES</h1>
+    <p class="lead">Este es un sistema para optimizar la gestión de eventos y servicios universitarios.</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Otra prueba</a>
+      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Ver más</a>
     </p>
   </main>
+
+  <!-- Section: About Us -->
+  <section class="py-5 bg-secondary text-white text-center">
+    <div class="container">
+      <h2>Acerca de Nosotros</h2>
+      <p>SI-OES es un sistema diseñado para facilitar la organización y gestión de eventos, mejorando la comunicación entre estudiantes y administración.</p>
+      <a href="#" class="btn btn-outline-light">Más información</a>
+    </div>
+  </section>
+
+  <!-- Section: Services -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Gestión de Eventos</h5>
+              <p class="card-text">Organiza y gestiona eventos de manera eficiente.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Registro de Usuarios</h5>
+              <p class="card-text">Permite el registro y autenticación de usuarios en el sistema.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Soporte Técnico</h5>
+              <p class="card-text">Ofrecemos asistencia técnica para solucionar problemas.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SI-OES. Todos los derechos reservados.</p>
+    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
