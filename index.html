@@ -6,19 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SI-OES</title>
   <link rel="stylesheet" href="D:\SI-OES\Resources\CSS\bootstrap.min.css">
+  <link ref="stylesheet" href="D:\SI-OES\Resources\CSS\bootstrap-icons.css">
   <script src="D:\SI-OES\Resources\CSS\JavaScript\bootstrap.bundle.min.js"></script>
   <style>
     .centered-content {
-      min-height: 100vh; /* Ensures it takes the full viewport height */
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+    }
+
+    /* Placeholder color for all input elements */
+    input::placeholder {
+      color: gray;
+      opacity: 1; /* Ensures color applies in all browsers */
     }
   </style>
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body class="h-100 text-bg-dark">
   <header class="mb-auto" data-bs-theme="dark">
     <div>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -41,7 +49,7 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
@@ -51,11 +59,10 @@
   </header>
 
   <main class="px-3 centered-content">
-    <h1>SI-OES</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text,
-      and add your own fullscreen background photo to make it your own.</p>
+    <h1>Algo</h1>
+    <p class="lead">Esto es un texto de prueba para verificar que el texto se visualize correctamente</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
+      <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Otra prueba</a>
     </p>
   </main>
 </body>
