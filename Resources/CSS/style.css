@@ -137,3 +137,121 @@ input::placeholder {
     color: #E2F1E7;
     text-decoration: underline;
 }
+.contact{
+    background-color: #E2F1E7;
+    width: 100vw;
+    position: relative;
+    margin: 200px 0;
+    height: 400px;
+    padding-top: 100PX;
+}
+.contact-contain{
+    width: 100vw;
+}
+.contact-subtitle{
+    width: 100%;
+    height: 50px;
+    position: flex;
+}
+.contact-subtitle h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #243642;
+}
+.contact-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info p{
+    width: 60%;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin: 15px 0;
+    color: #387478;
+}
+.contact-contain-members{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+    margin-top: 10px;
+}
+.contact-group-contain{
+    width: 60%;
+    height: 100%;
+}
+.contact-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+.contact-members{
+    width: 50%;
+    display: flex;
+    height: 90%;
+    position: relative;
+    align-items: center;
+    margin: 5px;
+    border: 15px;
+    border-width: 2px;
+    border-radius: 100px;
+    background-color: #243642;
+}
+.contact-members:hover{
+    background-color: #387478;
+}
+.contact-name{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+}
+.contact-name h3{
+    display: flex;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #E2F1E7;
+    width: 50%;
+    justify-content: center;
+}
+.contact-img{
+    width: 50%;
+    height: 90%;
+    margin: 3px 25px;
+}
+.contact-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contact-links{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    height: 100%;
+
+}
+.contact-links-a{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contact-links a{
+    margin: 3px;
+}
+.icono{
+    width: 30px;
+}
