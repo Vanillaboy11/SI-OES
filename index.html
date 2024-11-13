@@ -7,8 +7,10 @@
   <title>SI-OES</title>
   <link rel="stylesheet" href="Resources/CSS/bootstrap.min.css">
   <link rel="stylesheet" href="Resources/CSS/bootstrap-icons.css">
-  <link rel="stylesheet" href="Resources/CSS/styles.css"> <!-- Enlace al archivo CSS -->
-  <script src="Resources/JavaScript/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="Resources/CSS/styles.css"> <!--
+   Enlace al archivo CSS -->
+  <script src="Resources/JavaScript/bootstrap.bundle.min.js" defer></script>
+
   <style>
     .centered-content {
       min-height: 100vh;
@@ -59,44 +61,197 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-top: 20px;
     }
+
+    .contact {
+      background-color: #E2F1E7;
+      width: 100vw;
+      position: relative;
+      margin: 50px 0;
+      /* Reduce el margen superior e inferior */
+      height: 300px;
+      /* Ajusta la altura según tus preferencias */
+      padding-top: 50px;
+      /* Reduce el padding superior */
+    }
+
+    .contact-contain {
+      width: 100vw;
+    }
+
+    .contact-subtitle {
+      width: 100%;
+      height: 50px;
+      position: flex;
+    }
+
+    .contact-subtitle h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: #243642;
+    }
+
+    .contact-info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-info p {
+      width: 60%;
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      margin: 15px 0;
+      color: #387478;
+    }
+
+    .contact-contain-members {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      height: 200px;
+      margin-top: 10px;
+    }
+
+    .contact-group-contain {
+      width: 60%;
+      height: 100%;
+    }
+
+    .contact-group {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 50%;
+    }
+
+    .contact-members {
+      width: 50%;
+      display: flex;
+      height: 90%;
+      position: relative;
+      align-items: center;
+      margin: 5px;
+      border: 15px;
+      border-width: 2px;
+      border-radius: 100px;
+      background-color: #243642;
+    }
+
+    .contact-members:hover {
+      background-color: #387478;
+    }
+
+    .contact-name {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
+    }
+
+    .contact-name h3 {
+      display: flex;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-size: 20px;
+      color: #E2F1E7;
+      width: 50%;
+      justify-content: center;
+    }
+
+    .contact-img {
+      width: 50%;
+      height: 90%;
+      margin: 3px 25px;
+    }
+
+    .contact-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .contact-links {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      height: 100%;
+
+    }
+
+    .contact-links-a {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .contact-links a {
+      margin: 3px;
+    }
+
+    .icono {
+      width: 30px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      /* Ajusta el espacio entre el logo y el texto */
+      padding: 200px;
+      margin: 0;
+    }
+
+    .logo {
+      width: 80px;
+      /* Tamaño ajustable del logo */
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 
 <body class="h-100 text-bg-dark">
-
   <!-- Header -->
   <header class="mb-auto" data-bs-theme="dark">
-    <div>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SI-OES</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#acerca">Acerca de</a> <!-- Enlace a la sección 'Acerca' -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">SI-OES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#acerca">Acerca de</a> <!-- Enlace a la sección 'Acerca' -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
   </header>
 
   <!-- Main Content -->
@@ -104,7 +259,6 @@
     <h1>SI-OES</h1>
     <p class="lead">Estacionamiento ágil, seguro y eco-friendly.</p>
     <p class="lead">
-      <a href="#descripcion" class="btn btn-lg btn-light fw-bold border-white bg-white">Ver más</a>
     </p>
   </main>
 
@@ -126,32 +280,8 @@
         los operadores pueden maximizar la eficiencia operativa del área sin necesidad de intervención
         manual constante, y los usuarios disfrutan de un acceso seguro, optimizado y respetuoso con el
         medio ambiente.</p>
-      <a href="#" class="btn btn-outline-light">Más información</a>
     </div>
   </section>
-
-  <!-- New Section: Description of the project -->
-  <section id="descripcion" class="py-5">
-    <div class="container text-center">
-      <div class="description-box text-dark">
-        <h2>Descripción del Proyecto</h2>
-        <p>Nuestro sistema de optimización de estacionamiento utiliza tecnología avanzada y seguridad biométrica para
-          mejorar la gestión de áreas de estacionamiento, maximizando la eficiencia, seguridad y sostenibilidad. A
-          través de sensores inteligentes y algoritmos de inteligencia artificial, el sistema monitorea y optimiza el
-          uso de las áreas de estacionamiento en tiempo real, guiando a los conductores de manera eficiente y
-          minimizando la congestión y el tiempo de búsqueda.
-          Para garantizar la seguridad, el sistema emplea control de acceso biométrico, permitiendo que los usuarios
-          ingresen y salgan mediante reconocimiento facial o de huella digital, brindando una experiencia fluida y
-          segura. Este enfoque no solo permite una gestión más efectiva del espacio disponible, sino que también ayuda a
-          reducir la huella de carbono al minimizar la circulación innecesaria dentro del estacionamiento, beneficiando
-          tanto a los usuarios como al entorno.
-          Con esta solución, los operadores pueden maximizar la eficiencia operativa del área sin necesidad de
-          intervención manual constante, y los usuarios disfrutan de un acceso seguro, optimizado y respetuoso con el
-          medio ambiente.</p>
-      </div>
-    </div>
-  </section>
-
 
   <!-- Section: Services -->
   <section id="servicios" class="py-5 text-center">
@@ -190,17 +320,10 @@
   </section>
 
   <!-- Section: Contact -->
-  <section id="contact" class="contact">
+  <section id="contacto" class="contact">
     <div class="contact-contain container">
       <div class="contact-subtitle centered-content">
         <h2>Contact</h2>
-      </div>
-      <div class="contact-info">
-        <p>We are a team of Data Science and Computer Science students
-          looking forward to be the best version of
-          ourselves by studying, learning and teaching
-          the incredible world of science.
-        </p>
       </div>
       <div class="about-hr">
         <hr>
@@ -210,24 +333,25 @@
           <div class="contact-group">
             <div class="contact-members">
               <div class="contact-name">
-                <div class="contact-img"><img src="imagenes/abi.jpg"></div>
-                <h3>Abigail</h3>
+                <div class="contact-img"><img src="Resources/imagenes/abi.jpeg" alt="Abi's Photo"></div>
+                <h3>Abigail Martinez</h3>
               </div>
               <div class="contact-links">
                 <div class="contact-links-a">
-                  <a href="mailto:priscila.martinez55@uabc.edu"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a href="mailto:priscila.martinez55@uabc.edu"><img class="icono"
+                      src="Resources/imagenes/gmail.png"></a>
                 </div>
               </div>
             </div>
             <div class="contact-members">
               <div class="contact-name">
-                <div class="contact-img"><img src="imagenes/isaac.jpeg"></div>
-                <h3>Isaac</h3>
+                <div class="contact-img"><img src="Resources/imagenes/isaac.jpeg" alt="Isaac's Photo"></div>
+                <h3>Isaac Reyes</h3>
               </div>
               <div class="contact-links">
                 <div class="contact-links-a">
-                  <a href="mailto:salvador.varela@uabc.Edu.mx"><img class="icono" src="imagenes/gmail.png"></a>
-                  <a><img class="icono" src="imagenes/linkedin.png"></a>
+                  <a href="mailto:salvador.varela@uabc.Edu.mx"><img class="icono"
+                      src="Resources/imagenes/gmail.png"></a>
                 </div>
               </div>
             </div>
@@ -235,23 +359,25 @@
           <div class="contact-group">
             <div class="contact-members">
               <div class="contact-name">
-                <div class="contact-img"><img src="imagenes/rafa.jpeg"></div>
-                <h3>Rafa</h3>
+                <div class="contact-img"><img src="Resources/imagenes/rafa.jpeg" alt="Rafa's Photo"></div>
+                <h3>Rafael Moreno</h3>
               </div>
               <div class="contact-links">
                 <div class="contact-links-a">
-                  <a href="mailto:rafael.moreno41@uabc.edu.mx"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a href="mailto:rafael.moreno41@uabc.edu.mx"><img class="icono"
+                      src="Resources/imagenes/gmail.png"></a>
                 </div>
               </div>
             </div>
             <div class="contact-members">
               <div class="contact-name">
-                <div class="contact-img"><img src="imagenes/angel.jpeg"></div>
-                <h3>Angel</h3>
+                <div class="contact-img"><img src="Resources/imagenes/angel.jpeg" alt="Angel's Photo"></div>
+                <h3>Angel Garcia</h3>
               </div>
               <div class="contact-links">
                 <div class="contact-links-a">
-                  <a href="mailto:angel.garcia.anguiano@gmail.com"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a href="mailto:angel.garcia.anguiano@gmail.com"><img class="icono"
+                      src="Resources/imagenes/gmail.png"></a>
                 </div>
               </div>
             </div>
@@ -264,10 +390,11 @@
   <!-- Footer -->
   <footer id="footer" class="footer">
     <p>&copy; 2024 SI-OES. Todos los derechos reservados.</p>
-    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+    <p><a href="#" target="_blank">Política de Privacidad</a> | <a href="#" target="_blank">Términos de Servicio</a></p>
   </footer>
 
-  <script src="main.js"></script> <!-- Incluye el script JS que has creado -->
+  <script src="Resources/JavaScript/main.js"></script> <!-- Incluye el script JS que has creado -->
+
 </body>
 
 </html>
